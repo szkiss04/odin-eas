@@ -10,6 +10,9 @@ function randomColor( ) {
 
 function newGrid( ) {
     const dimension = prompt("How big sketchpad do you want?");
+    if( dimension === null ) {
+        return;
+    }
     if( dimension < 1 || dimension > 100 ) {
         alert( "Invalid size! Type a number between 1-100!" );
         return;
