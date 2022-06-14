@@ -12,11 +12,14 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex: 0, 1, 100%;
 }
 
 #pixel-container {
     display: flex;
     flex-wrap: wrap;
+    width: 500px;
+    height: 500px;
 }
 
 .header {
@@ -34,10 +37,18 @@ body {
 
 .grid-element {
     border: 1px solid black;
-    min-height: 16px;
-    min-width: 16px;
 }
 
 .filled {
     background-color: black;
+}
+
+button {
+    margin: 1rem;
+    padding: 0.75rem 1rem;
+    font-size: 1.5rem;
+}
+
+label {
+    font-size: 1.5rem;
 }
